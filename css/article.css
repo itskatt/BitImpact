@@ -1,0 +1,47 @@
+@charset "utf8";
+@import "commun.css";
+
+body {
+    width: 100%;
+    /* height: 50vh; */
+
+    background-image: url("../img/bitcoin-retourne.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+
+    background-color: var(--coul-nav);
+    color: white;
+
+    padding: 1em;
+
+    font-size: 1.1em;
+}
+
+nav > a {
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.page {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--coul-header);
+
+    margin-top: 5em;
+    padding: 1em;
+}
+
+main {
+    background-color: white;
+
+    padding: 1em;
+}

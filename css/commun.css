@@ -1,0 +1,51 @@
+@charset "utf8";
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+:root {
+    /* Polices */
+    --police-titres: "Work Sans", sans-serif;
+    --police-texte: "Merriweather", serif;
+
+    /* Couleurs d'accent */
+    --orange-fonce: #F27F34;
+    --orange-clair: #F9A03F;
+    --jaune: #F3C053;
+    --vert-clair: #94B33D;
+    --vert-fonce: #799431;
+
+    /* Couleurs de fond */
+    --coul-boite-accueil: rgba(71, 55, 55, 0.473);
+    --coul-header: rgba(128, 128, 128, 0.33);
+    --coul-nav: rgb(51, 51, 51);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: var(--police-texte);
+}
+
+h1, h2 {
+    font-family: var(--police-titres);
+}
+
+.bitimpact {
+    background-size: 200% 100%;
+    /* background-image: linear-gradient(90deg, var(--orange-clair), var(--jaune)); */
+    background-image: linear-gradient(90deg, rgba(249,160,63,1) 0%, rgba(243,192,83,1) 45%, rgba(242,208,134,1) 50%, rgba(243,192,83,1) 55%, rgba(249,160,63,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    font-family: var(--police-titres);
+    transition: all .4s ease-in-out;
+}
+
+.bitimpact:hover {
+    background-position: 100% 0;
+}
