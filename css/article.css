@@ -5,6 +5,8 @@ body {
     width: 100%;
     /* height: 50vh; */
 
+    /* BUG: l'image saute sur mobile
+    reparation: https://css-tricks.com/the-fixed-background-attachment-hack/#aa-lets-fix-it */
     background-image: url("../img/image-ecologie2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
