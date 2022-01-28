@@ -18,6 +18,23 @@
     --coul-boite-accueil: rgba(71, 55, 55, 0.473);
     --coul-header: rgba(128, 128, 128, 0.33);
     --coul-nav: rgb(51, 51, 51);
+
+    /* Tailles fluides
+    * L'idée est de créer des tailler de texte qui d'adaptent en fonction
+    * de la taille de l'écrant, par ex un titre va s'afficher en plus grand
+    * sur un ecran plus grand, et retrecir tant que l'écran rétréci
+    *
+    * Source: https://utopia.fyi/type/calculator?c=320,16,1.2,2800,18,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l
+    * Pour tester...
+    */
+    --step--2: clamp(0.69rem, 0.70rem + -0.04vw, 0.63rem);
+    --step--1: clamp(0.83rem, 0.83rem + 0.01vw, 0.84rem);
+    --step-0: clamp(1.00rem, 0.98rem + 0.08vw, 1.13rem);
+    --step-1: clamp(1.20rem, 1.16rem + 0.19vw, 1.50rem);
+    --step-2: clamp(1.44rem, 1.37rem + 0.36vw, 2.00rem);
+    --step-3: clamp(1.73rem, 1.61rem + 0.60vw, 2.66rem);
+    --step-4: clamp(2.07rem, 1.88rem + 0.95vw, 3.55rem);
+    --step-5: clamp(2.49rem, 2.20rem + 1.45vw, 4.74rem);
 }
 
 * {
@@ -26,7 +43,8 @@
 
 body {
     margin: 0;
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size: var(--step-0);
     font-family: var(--police-texte);
 }
 
