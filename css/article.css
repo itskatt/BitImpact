@@ -54,7 +54,7 @@ a:visited {
     color: var(--vert-clair);
 }
 
-a:active {
+a:active:not(.bitimpact) { /* pour éviter que le logo soit visé */
     color: var(--vert-fonce);
 }
 

@@ -8,11 +8,11 @@
     --police-texte: "Merriweather", serif;
 
     /* Couleurs d'accent */
-    --orange-fonce: #F27F34;
-    --orange-clair: #F9A03F;
-    --jaune: #F3C053;
-    --vert-clair: #94B33D;
-    --vert-fonce: #799431;
+    --orange-fonce: rgb(242, 127, 52);
+    --orange-clair: rgb(249, 160, 63);
+    --jaune: rgb(243, 192, 83);
+    --vert-clair: rgb(148, 179, 61);
+    --vert-fonce: rgb(121, 148, 49);
 
     /* Couleurs de fond */
     --coul-boite-accueil: rgba(71, 55, 55, 0.473);
@@ -59,14 +59,26 @@ h1, h2 {
 /* BitImpact */
 .bitimpact {
     background-size: 200% 100%;
-    /* background-image: linear-gradient(90deg, var(--orange-clair), var(--jaune)); */
-    background-image: linear-gradient(90deg, rgb(249, 160, 63) 0%, rgba(243,192,83,1) 45%, rgba(242,208,134,1) 50%, rgba(243,192,83,1) 55%, rgba(249,160,63,1) 100%);
+    background-image: linear-gradient(
+        90deg, rgb(249, 160, 63) 0%,
+        rgb(243, 192, 83) 45%, rgb(242, 208, 134) 50%, rgb(243, 192, 83) 55%,
+        rgb(249, 160, 63) 100%
+    );
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 
     font-family: var(--police-titres);
-    transition: all 0.4s ease-in-out;
+    transition: background-position 0.4s ease-in-out;
+}
+
+/* Le logo dans les navbar des articles ressort mieux avec un petit ajustement des couleurs */
+nav .bitimpact {
+    background-image: linear-gradient(
+        90deg, var(--orange-fonce) 0%,
+        var(--jaune) 45%, rgb(242, 208, 134) 50%, var(--jaune) 55%,
+        var(--orange-fonce) 100%
+    );
 }
 
 .bitimpact:hover {
