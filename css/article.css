@@ -41,6 +41,35 @@ nav > a {
     font-size: 1.5em;
 }
 
+/* Les éléments de base */
+/* 
+* TODO: changer les couleurs par page !!!!!
+*/
+a {
+    text-decoration: none;
+    color: var(--vert-clair);
+}
+
+a:visited {
+    color: var(--vert-clair);
+}
+
+a:active {
+    color: var(--vert-fonce);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+q::before {
+    content: "« ";
+}
+
+q::after {
+    content: " »";
+}
+
 /* ----------- Le menu... ---------------*/
 /* NOTE pour créer un menu/sous-menu responsive:
 *    - https://t.ly/hvbu (remplacer le js par un input:cheched)
@@ -132,6 +161,8 @@ header > p {
     display: inline-block;
     padding: 1em;
     background-color: white;
+
+    max-width: 70%;
     
     border-color: var(--vert-clair);
     border-width: var(--epaisseur-traits);
