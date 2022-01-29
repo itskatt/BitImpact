@@ -51,6 +51,21 @@ h1 {
 h2 {
     /* font-size: 2.5em; */
     font-size: var(--step-4);
+    /* color: var(--vert-fonce); */
+}
+
+/* Le petit trait en dessous des sous-titres */
+h2::after {
+    content: "";
+    display: block;
+
+    width: 50px;
+    height: 10px;
+    margin-top: 5px;
+    margin-left: 5px;;
+
+    /* TODO: la couleur change en fonction des articles */
+    background-color: var(--vert-clair);
 }
 
 main {
