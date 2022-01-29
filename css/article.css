@@ -43,6 +43,17 @@ header {
     padding: 1em;
 }
 
+/* Le petit paragraphe d'introduction */
+header > p {
+    display: inline-block;
+    padding: 1em;
+    background-color: white;
+    
+    border-color: var(--vert-clair);
+    border-width: 10px;
+    border-left-style: solid;
+}
+
 h1 {
     /* font-size: 4em; */
     font-size: var(--step-5);
