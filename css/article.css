@@ -1,6 +1,10 @@
 @charset "utf8";
 @import "commun.css";
 
+:root {
+    --epaisseur-traits: 10px;
+}
+
 body {
     width: 100%;
     /* height: 50vh; */
@@ -16,12 +20,13 @@ body {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 
     background-color: var(--coul-nav);
     color: white;
 
-    padding: 1em;
+    /* padding: 1em; */
 
     font-size: 1.1em;
 }
@@ -31,6 +36,78 @@ nav > a {
     font-size: 1.5em;
 }
 
+/* ----------- Le menu... ---------------*/
+/* NOTE pour créer un menu/sous-menu responsive:
+*    - https://t.ly/hvbu (remplacer le js par un input:cheched)
+*    - https://t.ly/O8Or (inspi pour le :checked)
+*/
+nav > ol {
+    display: flex;
+    /* gap: 1.5em; */
+
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+/* Les éléments du menu */
+nav > ol > li {
+    display: flex;
+    align-items: center;
+
+    position: relative;
+
+    padding: 1em 0;
+
+    cursor: default; /* Pour eviter d'afficher le curseur de surlignage */
+}
+
+/* Effet sur les elemnts du menu */
+/* nav > ol > li:hover {
+    border-bottom: 3px solid white;
+} */
+
+/* Les séparateurs entres les elements du menu */
+nav > ol > li:not(:last-child)::after {
+    content: "";
+
+    width: 2px;
+    height: 100%;
+
+    margin: 0 1em;
+
+    background-color: white;
+}
+
+/* Sous menu */
+nav > ol ol {
+    display: none;
+    position: absolute;
+
+    top: 100%;
+    right: 0;
+    /* margin-top: 1em; */
+
+    padding: 0 1em;
+    list-style-type: none;
+
+    width: max-content;
+
+    background-color: white;
+    color: black;
+}
+
+/* Elements du sous menu */
+nav > ol ol > li {
+    margin: 1em 0;
+}
+
+/* Pour afficher le sous menu */
+nav > ol > li:hover ol {
+    display: block;
+}
+
+/* Le conteneur de la page */
 .page {
     width: 80%;
     margin: 0 auto;
@@ -50,7 +127,7 @@ header > p {
     background-color: white;
     
     border-color: var(--vert-clair);
-    border-width: 10px;
+    border-width: var(--epaisseur-traits);
     border-left-style: solid;
 }
 
@@ -71,7 +148,7 @@ h2::after {
     display: block;
 
     width: 50px;
-    height: 10px;
+    height: var(--epaisseur-traits);
     margin-top: 5px;
     margin-left: 5px;;
 
