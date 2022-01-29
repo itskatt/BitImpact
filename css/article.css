@@ -29,6 +29,11 @@ nav {
     /* padding: 1em; */
 
     font-size: 1.1em;
+
+    /* TEST: rend la navbar collante en haut de la page */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 nav > a {
@@ -57,24 +62,24 @@ nav > ol > li {
 
     position: relative;
 
-    padding: 1em 0;
+    padding: 1em;
 
     cursor: default; /* Pour eviter d'afficher le curseur de surlignage */
 }
 
 /* Effet sur les elemnts du menu */
-/* nav > ol > li:hover {
-    border-bottom: 3px solid white;
-} */
+nav > ol > li:hover {
+    background-color: var(--coul-nav-hover);
+}
 
 /* Les séparateurs entres les elements du menu */
 nav > ol > li:not(:last-child)::after {
     content: "";
 
     width: 2px;
-    height: 100%;
+    height: 110%;
 
-    margin: 0 1em;
+    margin-left: 1em;
 
     background-color: white;
 }
@@ -95,6 +100,7 @@ nav > ol ol {
 
     background-color: white;
     color: black;
+    box-shadow: var(--ombre);
 }
 
 /* Elements du sous menu */
@@ -106,6 +112,7 @@ nav > ol ol > li {
 nav > ol > li:hover ol {
     display: block;
 }
+/* --------- Fin du menu --------------- */
 
 /* Le conteneur de la page */
 .page {
