@@ -71,3 +71,10 @@ h1, h2 {
 .bitimpact:hover {
     background-position: 100% 0;
 }
+
+footer {
+    height: 100px;
+
+    color: white;
+    background-color: var(--coul-nav);
+}
