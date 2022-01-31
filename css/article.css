@@ -185,6 +185,7 @@ header {
 
     margin-top: 5em;
     padding: 1em 1.5em;
+    padding-bottom: 3em;
 }
 
 /* Le petit paragraphe d'introduction */
@@ -216,6 +217,11 @@ h2 {
     /* color: var(--vert-fonce); */
 }
 
+/* Le premier sous-titre de l'article */
+main section:first-child > h2:first-child {
+    margin-top: 0;
+}
+
 /* Le petit trait en dessous des sous-titres */
 h2::after {
     content: "";
@@ -233,4 +239,5 @@ main {
     background-color: white;
 
     padding: 1.5em;
+    padding-top: 3em;
 }
