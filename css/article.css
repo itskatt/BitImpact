@@ -45,20 +45,20 @@ nav > a {
 /* 
 * TODO: changer les couleurs par page !!!!!
 */
-a {
+a:not([class]) {
     text-decoration: none;
     color: var(--vert-clair);
 }
 
-a:visited {
+a:not([class]):visited {
     color: var(--vert-clair);
 }
 
-a:active:not(.bitimpact) { /* pour éviter que le logo soit visé */
+a:not([class]):active { /* pour éviter que le logo soit visé */
     color: var(--vert-fonce);
 }
 
-a:hover {
+a:not([class]):hover {
     text-decoration: underline;
 }
 
