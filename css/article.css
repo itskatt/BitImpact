@@ -3,6 +3,12 @@
 
 :root {
     --epaisseur-traits: 10px;
+
+    /* "Thème" de l'article */
+    /* des valeurs par default pour l'instant */
+    --couleur: var(--vert-clair);
+    --couleur2: var(--vert-fonce);
+    --img-fond: url("../img/image-ecologie2.jpg");
 }
 
 body {
@@ -11,7 +17,7 @@ body {
 
     /* BUG: l'image saute sur mobile
     reparation: https://css-tricks.com/the-fixed-background-attachment-hack/#aa-lets-fix-it */
-    background-image: url("../img/image-ecologie2.jpg");
+    background-image: var(--img-fond);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -47,15 +53,15 @@ nav > a {
 */
 a:not([class]) {
     text-decoration: none;
-    color: var(--vert-clair);
+    color: var(--couleur);
 }
 
 a:not([class]):visited {
-    color: var(--vert-clair);
+    color: var(--couleur);
 }
 
 a:not([class]):active { /* pour éviter que le logo soit visé */
-    color: var(--vert-fonce);
+    color: var(--couleur2);
 }
 
 a:not([class]):hover {
@@ -189,7 +195,7 @@ header > p {
 
     max-width: 70%;
     
-    border-color: var(--vert-clair);
+    border-color: var(--couleur);
     border-width: var(--epaisseur-traits);
     border-left-style: solid;
 }
@@ -216,7 +222,7 @@ h2::after {
     margin-left: 5px;;
 
     /* TODO: la couleur change en fonction des articles */
-    background-color: var(--vert-clair);
+    background-color: var(--couleur);
 }
 
 main {
