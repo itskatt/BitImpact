@@ -12,7 +12,7 @@
 }
 
 body {
-    width: 100%;
+    /* width: 100%; */
     /* height: 50vh; */
 
     /* BUG: l'image saute sur mobile
@@ -178,8 +178,12 @@ nav > ol ol > li:hover {
 
 /* Le conteneur de la page */
 .page {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
+}
+
+.page p {
+    line-height: 1.6;
 }
 
 header {
