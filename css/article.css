@@ -84,20 +84,23 @@ nav > ol {
     list-style-type: none;
 }
 
-/* Les éléments du menu */
+/* Les conteneurs des éléments du menu */
 nav > ol > li {
     display: flex;
     align-items: center;
 
     position: relative;
 
-    padding: 1em;
-
     cursor: default; /* Pour eviter d'afficher le curseur de surlignage */
 }
 
-/* Effet sur les elemnts du menu */
-nav > ol > li:hover {
+/* Les textes des éléments du menu */
+nav > ol > li > span {
+    padding: 1em;
+}
+
+/* Effet sur le texte des éléments du menu */
+nav > ol > li:hover span {
     background-color: var(--coul-nav-hover);
 }
 
@@ -106,9 +109,7 @@ nav > ol > li:not(:last-child)::after {
     content: "";
 
     width: 2px;
-    height: 110%;
-
-    margin-left: 1em;
+    height: 60%;
 
     background-color: white;
 }
@@ -120,9 +121,8 @@ nav > ol ol {
 
     top: 100%;
     right: 0;
-    /* margin-top: 1em; */
 
-    padding: 0 1em;
+    padding: 0;
     list-style-type: none;
 
     width: max-content;
@@ -130,16 +130,41 @@ nav > ol ol {
     background-color: white;
     color: black;
     box-shadow: var(--ombre);
-}
 
-/* Elements du sous menu */
-nav > ol ol > li {
-    margin: 1em 0;
+    transform: translateY(50%);
+    opacity: 0;
 }
 
 /* Pour afficher le sous menu */
 nav > ol > li:hover ol {
     display: block;
+    animation: anim-menu 0.4s ease-out forwards;
+}
+
+@keyframes anim-menu {
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Conteneurs des élements du sous menu */
+nav > ol ol > li {
+    transition: background-color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+/* Contenu du sous menu */
+nav ol > li > a {
+    display: block;
+    padding: 1em;
+
+    color: black !important;
+    text-decoration: none !important;
+}
+
+/* Effet sur les éléments du sous menu */
+nav > ol ol > li:hover {
+    background-color: rgb(216, 216, 216);
 }
 /* --------- Fin du menu --------------- */
 
