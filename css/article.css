@@ -136,9 +136,6 @@ nav > ol ol {
     background-color: white;
     color: black;
     box-shadow: var(--ombre);
-
-    transform: translateY(50%);
-    opacity: 0;
 }
 
 /* Pour afficher le sous menu */
@@ -148,6 +145,11 @@ nav > ol > li:hover ol {
 }
 
 @keyframes anim-menu {
+    0% {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+
     100% {
         transform: translateY(0);
         opacity: 1;
@@ -203,6 +205,11 @@ header > p {
 h1 {
     /* font-size: 4em; */
     font-size: var(--step-5);
+}
+
+/* Le mot en couleur */
+h1 > span {
+    color: var(--couleur);
 }
 
 h2 {
