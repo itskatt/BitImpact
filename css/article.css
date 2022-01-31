@@ -48,9 +48,6 @@ nav > a {
 }
 
 /* Les éléments de base */
-/* 
-* TODO: changer les couleurs par page !!!!!
-*/
 a:not([class]) {
     text-decoration: none;
     color: var(--couleur);
@@ -175,7 +172,6 @@ nav ol > li > a {
 nav > ol ol > li:hover {
     background-color: rgb(216, 216, 216);
 }
-/* --------- Fin du menu --------------- */
 
 /* Le conteneur de la page */
 .page {
@@ -233,7 +229,6 @@ h2::after {
     margin-top: 5px;
     margin-left: 5px;;
 
-    /* TODO: la couleur change en fonction des articles */
     background-color: var(--couleur);
 }
 

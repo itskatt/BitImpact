@@ -3,6 +3,13 @@
 
 /* L'image du debut */
 header {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 3em 1em;
+
     width: 100%;
     /* height: 772px; */
     height: 100vh;
@@ -11,13 +18,6 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom right;
-
-    display: flex;
-    align-items: flex-end;
-    flex-direction: row;
-    justify-content: space-between;
-
-    padding: 3em 1em;
 }
 
 h1 {
@@ -139,7 +139,7 @@ main {
     width: 80%;
 }
 
-/* Les articles */
+/* Les articles (cartes avec un bref appercu des sujets traité) */
 .article {
     /* Pour enlever le style par default pour un lien */
     color: inherit;
