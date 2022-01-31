@@ -144,6 +144,7 @@ nav > ol > li:hover ol {
     animation: anim-menu 0.4s ease-out forwards;
 }
 
+/* SOLUTION ?: utilisier visibility: hidden https://stackoverflow.com/a/34529598 */
 @keyframes anim-menu {
     0% {
         transform: translateY(50%);
