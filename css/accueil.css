@@ -86,8 +86,8 @@ header span {
     flex-grow: 1; /* Pour pouvoir centrer le contenu */
 
     opacity: 0;
-    animation: apparition-scroller 2s ease-in forwards;
-    animation-delay: 3s;
+    animation: apparition-scroller 1s ease-in forwards;
+    animation-delay: 2.75s;
 }
 
 @keyframes apparition-scroller {
