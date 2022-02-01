@@ -34,7 +34,7 @@ nav {
 
     /* padding: 1em; */
 
-    font-size: 1.1em;
+    font-size: var(--step-1);
 
     /* TEST: rend la navbar collante en haut de la page */
     position: -webkit-sticky;
@@ -44,7 +44,7 @@ nav {
 
 nav > a {
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: var(--step-3);
 }
 
 /* Les éléments de base */
@@ -208,7 +208,6 @@ header > p {
 }
 
 h1 {
-    /* font-size: 4em; */
     font-size: var(--step-5);
 }
 
@@ -218,9 +217,7 @@ h1 > span {
 }
 
 h2 {
-    /* font-size: 2.5em; */
     font-size: var(--step-4);
-    /* color: var(--vert-fonce); */
 }
 
 /* Le premier sous-titre de l'article */
