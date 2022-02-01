@@ -244,3 +244,30 @@ main {
     padding: 1.5em;
     padding-top: 3em;
 }
+
+nav ol li:nth-child(3) div{
+    visibility: hidden;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 60px;
+    width: 120px;
+    height: 2px;
+    background-color: white;
+}
+
+nav > ol > li:hover div {
+    visibility: visible;
+    animation-name: slash_animation;
+    animation-duration: 0.3s;
+}
+
+@keyframes slash_animation {
+    from {
+        width: 0px;
+    }
+    
+    to {
+        width: 120px;
+    }
+}
+
