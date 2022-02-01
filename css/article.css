@@ -99,6 +99,7 @@ nav > ol > li {
 
 /* Les textes des éléments du menu */
 nav > ol > li > span {
+    user-select: none; /* pour empêcher les utilisateurs mobiles de sélectionner le texte */
     padding: 1em;
 }
 
