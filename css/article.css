@@ -181,6 +181,11 @@ nav > ol ol > li:hover {
     line-height: 1.6;
 }
 
+/* Ajout d'un espace entre les paragraphes */
+.page p:not(:last-of-type) {
+    margin-bottom: 1em;
+}
+
 header {
     background-color: var(--coul-header);
 
