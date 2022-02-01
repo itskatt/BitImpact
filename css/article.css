@@ -169,6 +169,52 @@ nav > ol ol > li:hover {
     background-color: rgb(216, 216, 216);
 }
 
+/* Animation slash sur les éléments du menu */
+#barre {
+    background-color: white;
+    visibility: hidden;
+    position: absolute;
+    margin-top: 2em;
+    width: 5.5em;
+    height: 0.08em;
+}
+
+nav ol li:nth-child(3) div{
+    margin-left: 2.6em;
+}
+
+nav ol li:nth-child(2) div{
+    margin-left: 2.3em;
+}
+
+nav ol li:nth-child(1) div{
+    margin-left: 2.2em;
+}
+
+nav > ol > li:hover #barre {
+    visibility: visible;
+    animation-name: slash_animation;
+    animation-duration: 0.3s;
+}
+
+@keyframes slash_animation {
+    from {
+        width: 0em;
+    }
+    
+    to {
+        width: 5.5em;
+    }
+}
+
+@media (max-width: 700px) {
+
+    nav #barre {
+        margin-left: 1em;
+        margin-top: 3.2em;
+    }
+}
+
 /* Le conteneur de la page */
 .page {
     width: 70%;
@@ -244,30 +290,3 @@ main {
     padding: 1.5em;
     padding-top: 3em;
 }
-
-nav ol li:nth-child(3) div{
-    visibility: hidden;
-    position: absolute;
-    margin-top: 40px;
-    margin-left: 60px;
-    width: 120px;
-    height: 2px;
-    background-color: white;
-}
-
-nav > ol > li:hover div {
-    visibility: visible;
-    animation-name: slash_animation;
-    animation-duration: 0.3s;
-}
-
-@keyframes slash_animation {
-    from {
-        width: 0px;
-    }
-    
-    to {
-        width: 120px;
-    }
-}
-
