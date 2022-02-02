@@ -292,24 +292,82 @@ main {
     padding-top: 3em;
 }
 
+/* Le séparateur à la fin de l'article */
+hr {
+    margin: 2em auto;
+    width: 80%;
+    background-color: var(--couleur);
+}
+
 /* Le conteneur des boutons pour passer d'une page a l'autre */
 .navig-pages {
     display: flex;
     justify-content: space-around;
 
-    padding: 2em 1em;
+    padding: 0 1em;
+    margin-bottom: 2em;
 }
 
 /* Les bouttons pour passer d'une page a l'autre */
-/* 
-type: https://cssbuttons.io/detail/meermubashar/rotten-swan-33
-*/
 .navig-pages a {
     text-decoration: none;
+    text-align: center;
     
-    padding: 1.5em;
+    padding: 1em;
+
+    border: 5px solid var(--couleur);
+    box-shadow: 0 0 2px rgba(17, 17, 26, 0.1);
 
     color: white;
-    background-image: linear-gradient(90deg, var(--couleur), white 100%);
-    /* background-size: 200% 100%; */
+    background-image: linear-gradient(90deg, var(--couleur) 50%, white 50%);
+    background-size: 200% 100%;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.navig-pages span {
+    position: relative;
+}
+
+.navig-pages .avant ::before,
+.navig-pages .apres ::after {
+    font-weight: bold;
+
+    position: absolute;
+    top: 0;
+
+    opacity: 0;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.navig-pages .avant:hover ::before,
+.navig-pages .apres:hover ::after {
+    opacity: 1;
+}
+
+/* Le boutton pour aller à la page précedente */
+.navig-pages .avant ::before {
+    content: "«";
+    left: -1.1em;
+}
+
+.navig-pages .avant:hover {
+    color: black;
+    background-position: 100%;
+
+    padding-left: 1.5em;
+    padding-right: 0.5em;
+}
+
+/* L'autre boutton */
+.navig-pages .apres ::after {
+    content: "»";
+    right: -1.1em;
+}
+
+.navig-pages .apres:hover {
+    color: black;
+    background-position: -100%;
+
+    padding-right: 1.5em;
+    padding-left: 0.5em;
 }
