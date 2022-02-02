@@ -139,7 +139,7 @@ main {
 }
 
 /* v2 */
-.enjeux {
+.enjeu {
     display: flex;
     align-items: center;
     gap: 5vw;
@@ -160,26 +160,26 @@ main {
     flex-direction: row-reverse;
 }
 
-.enjeux img {
+.enjeu img {
     border: 1px solid black; /* temporaire */
 }
 
-.enjeux > * {
+.enjeu > * {
     transition: all 1s var(--cb-bz);
 }
 
-.enjeux:hover img {
+.enjeu:hover img {
     transform: scale(1.1);
 }
 
-.enjeux:hover div {
+.enjeu:hover div {
     transform: scale(0.9);
 }
 
-.enjeux h2 {
+.enjeu h2 {
     font-size: var(--step-4);
 }
 
-.enjeux p {
+.enjeu p {
     font-size: var(--step-1);
 }
