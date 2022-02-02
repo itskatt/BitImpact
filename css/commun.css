@@ -22,6 +22,7 @@
 
     /* Misc. */
     --ombre: 1px 10px 34px 10px rgba(0,0,0,0.51);
+    --cb-bz: cubic-bezier(0.075, 0.82, 0.165, 1);
 
     /* ---- Tailles fluides
     * L'idée est de créer des tailler de texte qui d'adaptent en fonction
