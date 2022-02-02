@@ -8,7 +8,7 @@
     /* des valeurs par default pour l'instant */
     --couleur: var(--vert-clair);
     --couleur2: var(--vert-fonce);
-    --img-fond: url("../img/image-ecologie2.jpg");
+    --img-fond: url("../img/eco-fond.jpg");
 }
 
 body {
