@@ -105,12 +105,18 @@ nav > ol > li > span {
 
 /* Animation slash sur les éléments du menu TODO */
 .barre {
-    background-color: white;
-    visibility: hidden;
     position: absolute;
-    margin-top: 2em;
-    width: 5.5em;
+
+    visibility: hidden;
+    
+    width: 0;
     height: 0.08em;
+
+    margin-top: 2em;
+
+    background-color: white;
+
+    transition: all 1s var(--cb-bz);
 }
 
 nav ol li:nth-child(3) div{
@@ -127,18 +133,7 @@ nav ol li:nth-child(1) div{
 
 nav > ol > li:hover .barre {
     visibility: visible;
-    animation-name: slash_animation;
-    animation-duration: 0.3s;
-}
-
-@keyframes slash_animation {
-    from {
-        width: 0em;
-    }
-    
-    to {
-        width: 5.5em;
-    }
+    width: 5.5em;
 }
 
 @media (max-width: 700px) {
@@ -248,7 +243,7 @@ header > p {
     background-color: white;
 
     max-width: 70%;
-    
+
     border-color: var(--couleur);
     border-width: var(--epaisseur-traits);
     border-left-style: solid;
@@ -312,7 +307,7 @@ hr {
 .navig-pages a {
     text-decoration: none;
     text-align: center;
-    
+
     padding: 1em;
 
     border: 5px solid var(--couleur);
