@@ -152,10 +152,8 @@ main {
     color: inherit;
 
     background-color: white;
-    /* border: 1px solid black; */
-    /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
-    /* box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px; */
+    /* border: 1px solid black; */
 }
 
 .inverse {
@@ -163,7 +161,7 @@ main {
 }
 
 .enjeux img {
-    border: 1px solid black;
+    border: 1px solid black; /* temporaire */
 }
 
 .enjeux > * {
