@@ -55,17 +55,14 @@ header span {
 }
 
 #mot-jaune {
-    color: var(--jaune);
     animation-delay: .5s;
 }
 
 #mot-orange {
-    color: var(--orange-fonce);
     animation-delay: 1s;
 }
 
 #mot-vert {
-    color: var(--vert-clair);
     animation-delay: 1.5s;
 }
 

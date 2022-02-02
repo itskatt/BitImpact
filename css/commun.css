@@ -41,6 +41,19 @@
     --step-5: clamp(2.49rem, 2.20rem + 1.45vw, 4.74rem);
 }
 
+/* Couleurs de texte */
+.texte-jaune {
+    color: var(--jaune);
+}
+
+.texte-orange {
+    color: var(--orange-fonce);
+}
+
+.texte-vert {
+    color: var(--vert-clair);
+}
+
 * {
     box-sizing: border-box;
 }
