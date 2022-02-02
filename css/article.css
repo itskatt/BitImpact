@@ -170,7 +170,7 @@ nav > ol ol > li:hover {
 }
 
 /* Animation slash sur les éléments du menu TODO */
-#barre {
+.barre {
     background-color: white;
     visibility: hidden;
     position: absolute;
@@ -191,7 +191,7 @@ nav ol li:nth-child(1) div{
     margin-left: 2.2em;
 }
 
-nav > ol > li:hover #barre {
+nav > ol > li:hover .barre {
     visibility: visible;
     animation-name: slash_animation;
     animation-duration: 0.3s;
