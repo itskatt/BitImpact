@@ -208,8 +208,7 @@ nav > ol > li:hover .barre {
 }
 
 @media (max-width: 700px) {
-
-    nav #barre {
+    nav .barre {
         margin-left: 1em;
         margin-top: 3.2em;
     }
