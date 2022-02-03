@@ -106,7 +106,6 @@ nav .bitimpact {
 footer {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
 
     gap: 1em;
@@ -116,14 +115,22 @@ footer {
     background-color: var(--coul-nav);
 }
 
+footer .petit {
+    text-align: center;
+    margin-bottom: 0 !important;
+    font-size: var(--step--1);
+}
+
 footer .bitimpact {
     background: none;
     color: white;
     text-decoration: none;
 
+    margin-bottom: 1em;
+
     font-size: var(--step-1);
 }
 
-footer span {
-    font-size: var(--step--1);
+footer .petit a {
+    color: lightgrey !important;
 }
