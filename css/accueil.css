@@ -135,16 +135,34 @@ header span {
         align-items: flex-start;
         justify-content: flex-end;
 
-        gap: 5em;
+        gap: 2em;
     }
 
-    header > .cont-titre {
-        max-width: none;
+    h1 {
+        font-size: 5em;
+    }
+
+    header p {
+        font-size: 2em;
     }
 
     .scroller {
         align-self: center;
         flex-grow: 0;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    header > .cont-titre {
+        max-width: none;
+    }
+
+    h1 {
+        font-size: 3.5em;
+    }
+
+    header p {
+        font-size: 1.8em;
     }
 }
 
@@ -155,7 +173,7 @@ header span {
     }
 
     h1 {
-        font-size: var(--step-5);
+        font-size: 3em;
     }
 
     .cont-titre > p {
