@@ -135,10 +135,9 @@ main {
     gap: 7em;
 
     padding: 7em 1em;
-    background-color: aliceblue;
 }
 
-/* v2 */
+/* Les "cartes" des enjeux */
 .enjeu {
     display: flex;
     align-items: center;
@@ -152,8 +151,8 @@ main {
     color: inherit;
 
     background-color: white;
-    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
-    /* border: 1px solid black; */
+
+    box-shadow: var(--ombre-legere);
 }
 
 .inverse {
@@ -161,7 +160,7 @@ main {
 }
 
 .enjeu img {
-    border: 1px solid black; /* temporaire */
+    border: 1px solid black; /* temporaire, pour visualizer une image carrée */
 }
 
 .enjeu > * {

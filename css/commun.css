@@ -22,6 +22,7 @@
 
     /* Misc. */
     --ombre: 1px 10px 34px 10px rgba(0,0,0,0.51);
+    --ombre-legere: rgb(136 165 191 / 48%) 0px 0px 16px 5px, rgb(255 255 255 / 80%) -6px -2px 16px 0px;
     --cb-bz: cubic-bezier(0.075, 0.82, 0.165, 1);
 
     /* ---- Tailles fluides
