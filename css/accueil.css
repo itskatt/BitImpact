@@ -11,7 +11,6 @@ header {
     padding: 3em 1em;
 
     width: 100%;
-    /* height: 772px; */
     height: 100vh;
 
     background-image: url("../img/hero.jpg");
@@ -147,6 +146,11 @@ header span {
 }
 
 @media screen and (max-width: 620px) {
+    header {
+        background-image: url("../img/hero-mobile.jpg");
+        background-position: center;
+    }
+
     h1 {
         font-size: var(--step-5);
     }
