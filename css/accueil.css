@@ -54,14 +54,17 @@ header span {
 }
 
 #mot-jaune {
+    color: var(--jaune);
     animation-delay: .5s;
 }
 
 #mot-orange {
+    color: var(--orange-fonce);
     animation-delay: 1s;
 }
 
 #mot-vert {
+    color: var(--vert-clair);
     animation-delay: 1.5s;
 }
 
@@ -179,7 +182,7 @@ section {
 .enjeu {
     display: flex;
     align-items: center;
-    gap: 5vw;
+    gap: 3vw;
 
     max-width: 1100px;
 
@@ -195,10 +198,6 @@ section {
 
 .inverse {
     flex-direction: row-reverse;
-}
-
-.enjeu img {
-    border: 1px solid black; /* temporaire, pour visualizer une image carrée */
 }
 
 .enjeu > * {
@@ -221,7 +220,34 @@ section {
     font-size: var(--step-1);
 }
 
-@media screen and (max-width: 800px) {
+/* carte sur l'enjeu monetaire */
+#monetaire span {
+    color: var(--jaune);
+}
+
+#monetaire img {
+    border: 5px solid var(--jaune);
+}
+
+/* carte sur l'enjeu spéculatif */
+#speculatif span {
+    color: var(--orange-fonce);
+}
+
+#speculatif img {
+    border: 5px solid var(--orange-fonce);
+}
+
+/* carte sur l'enjeu écologique */
+#ecologique span {
+    color: var(--vert-clair);
+}
+
+#ecologique img {
+    border: 5px solid var(--vert-clair);
+}
+
+@media screen and (max-width: 900px) {
     .enjeu {
         flex-direction: column;
 
@@ -230,7 +256,7 @@ section {
     }
 
     .enjeu img {
-        max-width: 300px;
+        max-width: 400px;
         width: 100%;
         height: auto;
     }
