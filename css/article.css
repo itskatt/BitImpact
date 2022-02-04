@@ -366,3 +366,21 @@ hr {
     padding-right: 1.5em;
     padding-left: 0.5em;
 }
+
+/* Gestion des images d'article */
+#media_img {
+    float: right;
+    width: 20%;
+    height: 20%;
+    margin-left: 50px;
+    margin-right: 50px;
+    box-shadow: gray 10px 10px 30px;
+}
+
+#digiconomist_img {
+    float: left;
+    width: 20%;
+    height: 20%;
+    margin-right: 50px;
+    margin-left: 50px;
+}
