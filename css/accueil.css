@@ -217,11 +217,17 @@ section {
     font-size: var(--step-1);
 }
 
-/* TODO: rendre les images responsives */
 @media screen and (max-width: 800px) {
     .enjeu {
         flex-direction: column;
 
+        width: 100%;
         padding: 2em;
+    }
+
+    .enjeu img {
+        max-width: 300px;
+        width: 100%;
+        height: auto;
     }
 }
