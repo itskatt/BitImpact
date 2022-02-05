@@ -62,6 +62,11 @@ h1, h2 {
     font-family: var(--police-titres);
 }
 
+/* Les liens qui pointent vers des pages externes */
+a[target="_blank"]::after {
+    content: " ↗️";
+}
+
 /* BitImpact */
 .bitimpact {
     background-size: 200% 100%;
