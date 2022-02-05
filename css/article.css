@@ -214,7 +214,10 @@ nav > ol ol > li:hover {
     width: 70%;
     margin: 0 auto;
 
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    box-shadow:
+        rgba(17, 17, 26, 0.1) 0px 4px 16px,
+        rgba(17, 17, 26, 0.1) 0px 8px 24px,
+        rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 
 .page p {
@@ -368,26 +371,35 @@ hr {
 }
 
 /* Gestion des images d'article */
-.media_img {
+figure img {
+    box-shadow: var(--ombre-legere);
+}
+
+figure figcaption {
+    text-align: center;
+    font-size: var(--step--1)
+}
+
+.droite img, .gauche img {
+    width: 300px;
+    height: auto;
+}
+
+.droite {
     float: right;
-    width: 30%;
-    height: 30%;
-    margin-left: 50px;
-    margin-right: 50px;
-    box-shadow: gray 10px 10px 30px;
 }
 
-.digiconomist_img {
+.gauche {
     float: left;
-    width: 30%;
-    height: 30%;
-    margin-right: 50px;
-    margin-left: 50px;
 }
 
-.energie_verte {
-    display: block;
-    width: 60%;
-    height: 60%;
-    margin: 50px auto 50px auto;
+.grande {
+    width: 600px;
+
+    margin: 2em auto;
+}
+
+.grande img {
+    width: 100%;
+    height: auto;
 }
