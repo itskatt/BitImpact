@@ -42,8 +42,8 @@ nav {
     top: 0;
 }
 
-nav > a {
-    text-decoration: none;
+/* Logo */
+nav .bitimpact {
     font-size: var(--step-3);
 }
 
@@ -74,10 +74,6 @@ q::after {
 }
 
 /* ----------- Le menu... ---------------*/
-/* NOTE pour créer un menu/sous-menu responsive:
-*    - https://t.ly/hvbu (remplacer le js par un input:cheched)
-*    - https://t.ly/O8Or (inspi pour le :checked)
-*/
 nav > ol {
     display: flex;
     /* gap: 1.5em; */
@@ -110,7 +106,7 @@ nav > ol > li > span {
     visibility: hidden;
     
     width: 0;
-    height: 0.08em;
+    height: 2px;
 
     margin-top: 2em;
 
@@ -134,13 +130,6 @@ nav ol li:nth-child(1) div {
 nav > ol > li:hover .barre {
     visibility: visible;
     width: 5.5em;
-}
-
-@media (max-width: 700px) {
-    nav .barre {
-        margin-left: 1em;
-        margin-top: 3.2em;
-    }
 }
 
 /* Effet sur le texte des éléments du menu */
@@ -209,15 +198,95 @@ nav > ol ol > li:hover {
     background-color: rgb(216, 216, 216);
 }
 
+/* Responsivité du menu et sous-menu */
+@media screen and (max-width: 683px) {
+    .page {
+        margin-top: 300px !important;
+    }
+
+    nav {
+        /* Pour eviter aue la page saute quand on selectionne une element */
+        position: absolute;
+        width: 100%;
+
+        flex-direction: column;
+    }
+
+    /* menu */
+    nav > ol {
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    /* Cont. des elements du menu */
+    nav > ol > li {
+        flex-direction: column;
+
+        /* width: 100%; */
+    }
+
+    /* Textes des éléments du menu */
+    nav > ol > li > span {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Sous menu */
+    nav > ol ol {
+        display: none;
+        position: static;
+
+        width: 100%;
+        transform: none;
+    }
+
+    nav > ol > li:hover ol {
+        display: block;
+    }
+
+    /* Effet slash */
+    nav .barre {
+        margin-top: 2.4em;
+    }
+
+    nav ol li:nth-child(3) div {
+        margin-left: 1.5em;
+    }
+    
+    nav ol li:nth-child(2) div {
+        margin-left: 2em;
+    }
+    
+    nav ol li:nth-child(1) div {
+        margin-left: 1.2em;
+    }
+
+    /* On en profite pour aussi faire l'intro */
+    header > p {
+        max-width: 100% !important;
+
+        margin: 0 !important;
+    }
+}
+
 /* Le conteneur de la page */
 .page {
-    width: 70%;
+    width: 80%;
+    max-width: 1333px;
     margin: 0 auto;
 
     box-shadow:
         rgba(17, 17, 26, 0.1) 0px 4px 16px,
         rgba(17, 17, 26, 0.1) 0px 8px 24px,
         rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+@media screen and (max-width: 1000px) {
+    .page {
+        max-width: none;
+        width: 95%;
+    }
 }
 
 .page p {
@@ -301,7 +370,9 @@ hr {
 .navig-pages {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 
+    gap: 1em;
     padding: 0 1em;
     margin-bottom: 2em;
 }
@@ -381,7 +452,7 @@ figure figcaption {
 }
 
 .droite img, .gauche img {
-    width: 300px;
+    max-width: 300px;
     height: auto;
 }
 
@@ -394,7 +465,7 @@ figure figcaption {
 }
 
 .grande {
-    width: 600px;
+    max-width: 600px;
 
     margin: 2em auto;
 }
@@ -402,4 +473,21 @@ figure figcaption {
 .grande img {
     width: 100%;
     height: auto;
+}
+
+@media screen and (max-width: 725px) {
+    .droite, .gauche {
+        float: none;
+
+        margin: 2em auto;
+    }
+
+    .droite img, .gauche img {
+        display: block;
+    
+        width: 100%;
+        height: auto;
+
+        margin: 1em auto;
+    }
 }
