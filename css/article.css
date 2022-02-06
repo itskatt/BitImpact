@@ -211,13 +211,21 @@ nav > ol ol > li:hover {
 
 /* Le conteneur de la page */
 .page {
-    width: 70%;
+    width: 80%;
+    max-width: 1333px;
     margin: 0 auto;
 
     box-shadow:
         rgba(17, 17, 26, 0.1) 0px 4px 16px,
         rgba(17, 17, 26, 0.1) 0px 8px 24px,
         rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+@media screen and (max-width: 1000px) {
+    .page {
+        max-width: none;
+        width: 95%;
+    }
 }
 
 .page p {
@@ -301,7 +309,9 @@ hr {
 .navig-pages {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 
+    gap: 1em;
     padding: 0 1em;
     margin-bottom: 2em;
 }
@@ -381,7 +391,7 @@ figure figcaption {
 }
 
 .droite img, .gauche img {
-    width: 300px;
+    max-width: 300px;
     height: auto;
 }
 
@@ -394,7 +404,7 @@ figure figcaption {
 }
 
 .grande {
-    width: 600px;
+    max-width: 600px;
 
     margin: 2em auto;
 }
@@ -402,4 +412,21 @@ figure figcaption {
 .grande img {
     width: 100%;
     height: auto;
+}
+
+@media screen and (max-width: 725px) {
+    .droite, .gauche {
+        float: none;
+
+        margin: 2em auto;
+    }
+
+    .droite img, .gauche img {
+        display: block;
+    
+        width: 100%;
+        height: auto;
+
+        margin: 1em auto;
+    }
 }
