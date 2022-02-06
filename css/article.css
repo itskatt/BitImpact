@@ -261,6 +261,13 @@ nav > ol ol > li:hover {
     nav ol li:nth-child(1) div {
         margin-left: 1.2em;
     }
+
+    /* On en profite pour aussi faire l'intro */
+    header > p {
+        max-width: 100% !important;
+
+        margin: 0 !important;
+    }
 }
 
 /* Le conteneur de la page */
