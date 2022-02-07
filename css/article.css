@@ -23,10 +23,9 @@ nav {
 
     font-size: var(--step-1);
 
-    /* TEST: rend la navbar collante en haut de la page */
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
+    /* Pour que le sous menu s'affiche au dessus du contenu de la page (vive les contextes d'empilement) */
+    position: absolute;
+    width: 100%;
 }
 
 /* Logo */
@@ -154,6 +153,8 @@ nav > ol ol {
     transition: 0.4s ease-in-out;
     transform: translateY(50%);
     opacity: 0;
+
+    z-index: 999;
 }
 
 /* Pour afficher le sous menu */
@@ -285,7 +286,7 @@ nav > ol ol > li:hover {
 
     width: 80%;
     max-width: 1333px;
-    margin-top: 5rem;
+    margin-top: 150px;
 
     box-shadow:
         rgba(17, 17, 26, 0.1) 0px 4px 16px,
