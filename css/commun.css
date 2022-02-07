@@ -64,7 +64,8 @@ h1, h2 {
 
 /* Les liens qui pointent vers des pages externes */
 a[target="_blank"]::after {
-    content: " 🡽";
+    content: url("../img/page-externe.svg");
+    margin-left: 0.1em;
 }
 
 /* BitImpact */
