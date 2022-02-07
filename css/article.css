@@ -210,6 +210,7 @@ nav > ol ol > li:hover {
         width: 100%;
 
         flex-direction: column;
+        gap: 1em;
     }
 
     /* menu */
