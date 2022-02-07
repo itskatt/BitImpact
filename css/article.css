@@ -454,10 +454,12 @@ hr {
 
 /* Gestion des images d'article */
 figure img {
-    box-shadow: var(--ombre-legere);
+    filter: drop-shadow(0 0 14px grey);
 }
 
 figure figcaption {
+    margin-top: 1em;
+
     text-align: center;
     font-size: var(--step--1)
 }
@@ -476,7 +478,7 @@ figure figcaption {
 }
 
 .grande {
-    max-width: 600px;
+    max-width: 750px;
 
     margin: 2em auto;
 }
