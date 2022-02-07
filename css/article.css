@@ -11,19 +11,6 @@
     --img-fond: url("../img/ecologique/eco-fond.jpg");
 }
 
-body {
-    /* width: 100%; */
-    /* height: 50vh; */
-
-    /* BUG: l'image saute sur mobile
-    reparation: https://css-tricks.com/the-fixed-background-attachment-hack/#aa-lets-fix-it */
-    background-image: var(--img-fond);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-}
-
 nav {
     display: flex;
     justify-content: space-around;
@@ -199,7 +186,7 @@ nav > ol ol > li:hover {
 /* Responsivité du menu et sous-menu */
 @media screen and (max-width: 683px) {
     .page {
-        margin-top: 300px !important;
+        margin-top: 320px !important;
     }
 
     nav {
@@ -209,6 +196,8 @@ nav > ol ol > li:hover {
 
         flex-direction: column;
         gap: 1em;
+
+        z-index: 2;
     }
 
     /* menu */
@@ -269,11 +258,34 @@ nav > ol ol > li:hover {
     }
 }
 
+/* L'image de fond */
+/* Explication:
+*    Sur mobile, il y a un bug qui fait en sorte que l'image de fond du body "saute".
+*    Pour résoudre ce problème, j'ai tiré la solution de cet article:
+*                                   https://css-tricks.com/the-fixed-background-attachment-hack
+*/
+.fond {
+    position: fixed;
+
+    height: 100vh;
+    width: 100vw;
+
+    background: var(--img-fond);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /* Le conteneur de la page */
 .page {
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+
     width: 80%;
     max-width: 1333px;
-    margin: 0 auto;
+    margin-top: 5rem;
 
     box-shadow:
         rgba(17, 17, 26, 0.1) 0px 4px 16px,
@@ -302,7 +314,6 @@ nav > ol ol > li:hover {
 header {
     background-color: var(--coul-header);
 
-    margin-top: 5em;
     padding: 1em 1.5em;
     padding-bottom: 3em;
 }
