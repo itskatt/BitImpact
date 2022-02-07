@@ -89,8 +89,6 @@ nav > ol > li {
     align-items: center;
 
     position: relative;
-
-    cursor: default; /* Pour eviter d'afficher le curseur de surlignage */
 }
 
 /* Les textes des éléments du menu */
