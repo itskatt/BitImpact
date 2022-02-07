@@ -3,5 +3,5 @@
 :root {
     --couleur: var(--jaune);
     --couleur2: var(--orange-clair);
-    --img-fond: url("../../img/monetaire/illustration.jpg");
+    --img-fond: url("../../img/monetaire/fond.jpg");
 }
