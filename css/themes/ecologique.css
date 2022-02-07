@@ -1,0 +1,7 @@
+@charset "utf8";
+
+:root {
+    --couleur: var(--vert-clair);
+    --couleur2: var(--vert-fonce);
+    --img-fond: url("../img/ecologique/eco-fond.jpg");
+}

@@ -4,7 +4,7 @@
 :root {
     --epaisseur-traits: 10px;
 
-    /* "Thème" de l'article */
+    /* Thème de l'article */
     /* des valeurs par default pour l'instant */
     --couleur: var(--vert-clair);
     --couleur2: var(--vert-fonce);
