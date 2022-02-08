@@ -5,3 +5,8 @@
     --couleur2: var(--orange-clair);
     --img-fond: url("../img/monetaire/fond.jpg");
 }
+
+/* Ajustement car on ne voyait pas les bitcoins sur mobile */
+.fond {
+    background-position: top right;
+}

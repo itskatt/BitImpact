@@ -265,7 +265,7 @@ nav > ol ol > li:hover {
     height: 100vh;
     width: 100vw;
 
-    background: var(--img-fond);
+    background-image: var(--img-fond);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
