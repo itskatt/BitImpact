@@ -455,6 +455,7 @@ figure img {
 figure figcaption {
     margin-top: 1em;
 
+    color: rgba(0, 0, 0, 0.877);
     text-align: center;
     font-size: var(--step--1)
 }
