@@ -3,12 +3,6 @@
 
 :root {
     --epaisseur-traits: 10px;
-
-    /* Thème de l'article */
-    /* des valeurs par default pour l'instant */
-    /* --couleur: var(--vert-clair);
-    --couleur2: var(--vert-fonce);
-    --img-fond: url("../img/ecologique/eco-fond.jpg"); */
 }
 
 nav {
@@ -399,7 +393,8 @@ hr {
     box-shadow: 0 0 2px rgba(17, 17, 26, 0.1);
 
     color: white;
-    background-image: linear-gradient(90deg, var(--couleur) 50%, white 50%);
+    background-color: var(--couleur);
+    background-image: linear-gradient(90deg, var(--couleur) 51%, white 50%);
     background-size: 200% 100%;
     transition: all 1s var(--cb-bz);
 }
@@ -446,7 +441,7 @@ hr {
 
 .navig-pages .apres:hover {
     color: black;
-    background-position: -100%;
+    background-position: -98%;
 
     padding-right: 1.5em;
     padding-left: 0.5em;
