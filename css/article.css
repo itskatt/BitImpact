@@ -5,6 +5,12 @@
     --epaisseur-traits: 10px;
 }
 
+/* Selection dans les articles */
+::selection {
+    background-color: var(--couleur);
+    color: white;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
