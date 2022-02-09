@@ -1,0 +1,13 @@
+@charset "utf8";
+
+:root {
+    --couleur: black;
+    --couleur2: black;
+    --img-fond: url("../img/fond-biblio.jpg");
+}
+
+/* Réinitialisation du style de surlignage */
+::selection {
+    background-color: highlight;
+    color: highlighttext;
+}

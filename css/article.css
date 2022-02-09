@@ -7,8 +7,8 @@
 
 /* Selection dans les articles */
 ::selection {
-    background-color: var(--couleur);
-    color: white;
+    /* background-color: var(--couleur); */
+    /* color: white; */
 }
 
 nav {
