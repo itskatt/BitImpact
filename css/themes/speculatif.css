@@ -4,4 +4,6 @@
     --couleur: var(--orange-fonce);
     --couleur2: rgb(238, 97, 15);
     --img-fond: url("../img/speculatif/fond-specu.jpg");
+
+    --coul-header: #a9a9a954;
 }

@@ -43,7 +43,7 @@ a:not([class]):visited {
     color: var(--couleur);
 }
 
-a:not([class]):active { /* pour éviter que le logo soit visé */
+a:not([class]):active {
     color: var(--couleur2);
 }
 

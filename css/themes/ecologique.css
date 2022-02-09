@@ -5,3 +5,7 @@
     --couleur2: var(--vert-fonce);
     --img-fond: url("../img/ecologique/eco-fond.jpg");
 }
+
+h1 > span {
+    text-shadow: 0px 0px 2px black;
+}
