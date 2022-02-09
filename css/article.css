@@ -28,6 +28,16 @@ nav {
     width: 100%;
 }
 
+/* Le boutton hamburger, pour deplier le menu sur mobile */
+#hamburger {
+    display: none;
+}
+
+.haut > label {
+    display: none;
+    fill: white;
+}
+
 /* Logo */
 nav .bitimpact {
     font-size: var(--step-3);
@@ -193,23 +203,45 @@ nav > ol ol > li:hover {
 
 /* Responsivité du menu et sous-menu */
 @media screen and (max-width: 683px) {
-    .page {
-        margin-top: 320px !important;
-    }
-
     nav {
         /* Pour eviter aue la page saute quand on selectionne une element */
         position: absolute;
         width: 100%;
 
+        /* padding: 0.5em 0; */
         flex-direction: column;
-        gap: 1em;
 
         z-index: 2;
     }
 
+    /* Le conteneur du titre et du hamburger */
+    .haut {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        width: 100%;
+    }
+
+    /* Le hamburger */
+    .haut > label {
+        display: inline;
+        padding: 0.5em 1em;
+    }
+
+    .haut > label:hover {
+        background-color: var(--coul-nav-hover);
+    }
+
+    /* La checkbox en coulisses */
+    #hamburger:checked ~ ol {
+        display: block;
+    }
+
     /* menu */
     nav > ol {
+        display: none;
+
         flex-direction: column;
 
         width: 100%;
