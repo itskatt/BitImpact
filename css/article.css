@@ -19,13 +19,17 @@ nav {
     background-color: var(--coul-nav);
     color: white;
 
-    /* padding: 1em; */
+    box-shadow: var(--ombre);
 
     font-size: var(--step-1);
 
     /* Pour que le sous menu s'affiche au dessus du contenu de la page (vive les contextes d'empilement) */
-    position: absolute;
+    position: fixed;
+    top: 0;
+
     width: 100%;
+
+    z-index: 2;
 }
 
 /* Le boutton hamburger, pour deplier le menu sur mobile */
@@ -204,14 +208,9 @@ nav > ol ol > li:hover {
 /* Responsivité du menu et sous-menu */
 @media screen and (max-width: 683px) {
     nav {
-        /* Pour eviter aue la page saute quand on selectionne une element */
-        position: absolute;
         width: 100%;
 
-        /* padding: 0.5em 0; */
         flex-direction: column;
-
-        z-index: 2;
     }
 
     /* Le conteneur du titre et du hamburger */
