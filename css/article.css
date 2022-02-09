@@ -7,8 +7,8 @@
 
 /* Selection dans les articles */
 ::selection {
-    /* background-color: var(--couleur); */
-    /* color: white; */
+    background-color: var(--couleur);
+    color: white;
 }
 
 nav {
@@ -78,8 +78,10 @@ nav > ol > li {
 }
 
 /* Les textes des éléments du menu */
-nav > ol > li > span {
-    user-select: none; /* pour empêcher les utilisateurs mobiles de sélectionner le texte */
+nav > ol > li > a {
+    color: white !important;
+    text-decoration: none !important;
+
     padding: 1em;
 }
 
@@ -117,7 +119,7 @@ nav > ol > li:hover .barre {
 }
 
 /* Effet sur le texte des éléments du menu */
-nav > ol > li:hover span {
+nav > ol > li:hover > a {
     background-color: var(--coul-nav-hover);
 }
 
@@ -142,6 +144,7 @@ nav > ol ol {
     list-style-type: none;
 
     width: max-content;
+    max-width: 320px;
 
     background-color: white;
     color: black;
@@ -167,11 +170,15 @@ nav > ol > li:hover ol {
 
 /* Conteneurs des élements du sous menu */
 nav > ol ol > li {
+    /* text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; */
+
     transition: background-color 1s var(--cb-bz);
 }
 
 /* Contenu du sous menu */
-nav ol > li > a {
+nav ol ol > li > a {
     display: block;
     padding: 1em;
 
@@ -216,7 +223,7 @@ nav > ol ol > li:hover {
     }
 
     /* Textes des éléments du menu */
-    nav > ol > li > span {
+    nav > ol > li > a {
         width: 100%;
         text-align: center;
     }
@@ -227,6 +234,7 @@ nav > ol ol > li:hover {
         position: static;
 
         width: 100%;
+        max-width: none;
         transform: none;
     }
 
