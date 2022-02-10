@@ -249,14 +249,6 @@ nav > ol ol > li:hover {
     /* Cont. des elements du menu */
     nav > ol > li {
         flex-direction: column;
-
-        /* width: 100%; */
-    }
-
-    /* Textes des éléments du menu */
-    nav > ol > li > a {
-        width: 100%;
-        text-align: center;
     }
 
     /* Sous menu */
